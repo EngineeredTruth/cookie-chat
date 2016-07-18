@@ -8,6 +8,8 @@
   <body ng-controller="mainCtrl">
     <div class="main-container">
       <h1> DevMountain Chat Room </h1>
+      <h3>Cookie Count: {{cookie}}</h3>
+      <button ng-click='addCookie()' type="button" name="button">Post a cookie</button>
       <form ng-submit="postMessage(message)">
         <input class="form-control text-box" type="text" ng-model="message" placeholder="Message">
       </form>
